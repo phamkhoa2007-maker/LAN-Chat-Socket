@@ -1,4 +1,5 @@
 import argparse
+import udp_discovery
 import state
 
 
@@ -50,6 +51,7 @@ def main():
     print("[*] Type /help to see available commands.")
 
     # TODO (Member A): Start UDP broadcaster & listener threads here
+    udp_discovery.start_udp_discovery()
     # TODO (Khoa): Start TCP acceptor thread here
 
     # Main input loop (Member B will later upgrade this with prompt_toolkit)
